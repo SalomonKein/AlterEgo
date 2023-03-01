@@ -8,7 +8,7 @@ export default function NewsItem({
   delPost,
 }: {
   post: INews;
-  delPost: any;
+  delPost: (id: number) => void;
 }) {
   return (
     <Container>

@@ -14,8 +14,8 @@ export const fetchNews = (page: number) => async (dispatch: AppDispatch) => {
       newsSlice.actions.addTotalCount(response.headers["x-total-count"])
     );
     dispatch(newsSlice.actions.newsFetchingSuccess(response.data));
-  } catch (e: any) {
-    dispatch(newsSlice.actions.newsFetchingError(e.message));
+  } catch (e) {
+    dispatch(newsSlice.actions.newsFetchingError((e as Error).message));
   }
 };
 
