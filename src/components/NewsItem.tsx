@@ -12,7 +12,12 @@ export default function NewsItem({
 }) {
   return (
     <Container>
-      <Grid container>
+      <Grid
+  container
+  direction="column"
+  justifyContent="center"
+  alignItems="stretch"
+>
         <Grid item border={"solid blue 1px"} borderRadius={2} m={2}>
           <Typography variant="h5" align="center" component="h1" gutterBottom>
             {post.title}

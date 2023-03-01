@@ -64,12 +64,6 @@ function ResponsiveAppBar() {
               >
                 {t("In")}
               </Button>
-              <Button
-                onClick={() => navigate("/registration")}
-                sx={{ my: 2, mx: 3, color: "white", display: "block" }}
-              >
-                {t("Up")}
-              </Button>
             </Box>
           )}
           <LangLocalizations />

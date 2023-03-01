@@ -16,7 +16,7 @@ i18n
       caches: ["cookie"],
     },
     backend: {
-      loadPath: "/assets/locales/{{lng}}/translation.json",
+      loadPath: "https://SalomonKein.github.io/AlterEgo/assets/locales/{{lng}}/translation.json",
     },
   });
 
