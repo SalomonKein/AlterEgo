@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import AppRouter from "./components/AppRouter";
 import { useEffect } from "react";
@@ -14,10 +14,10 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <NavBar />
       <AppRouter />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
