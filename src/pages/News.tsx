@@ -1,6 +1,5 @@
 import { Button, Grid } from "@mui/material";
 import Container from "@mui/material/Container";
-import { Box } from "@mui/system";
 import React, { useEffect, useState } from "react";
 import NewsItem from "../components/NewsItem";
 import { useAppDispatch, useAppSelector } from "../hooks";
@@ -34,24 +33,13 @@ export default function News() {
 
   return (
     <Container>
-      <Grid item
-                container
-                sx={{
-                  marginInline: "auto",
-                }}>
-        {news.map((item) => (
-          <NewsItem key={item.id} post={item} delPost={onClickHadlerDelete} />
-        ))}
-        <Button
-          variant="outlined"
-          sx={{
-            mb: 2,
-            marginInline: "auto",
-          }}
-          onClick={onClickHadlerFetch}
-        >
-          Add more news
-        </Button>
+      <Grid container justifyContent="center" mb={4}>
+      {news.map((item) => (
+        <NewsItem key={item.id} post={item} delPost={onClickHadlerDelete} />
+      ))}
+      <Button variant="outlined" onClick={onClickHadlerFetch}>
+        Add more news
+      </Button>
       </Grid>
     </Container>
   );
