@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/.github.io/AlterEgo/static/css/main.e6c13ad2.css",
-    "main.js": "/.github.io/AlterEgo/static/js/main.4dcbebae.js",
-    "static/js/787.13a188cf.chunk.js": "/.github.io/AlterEgo/static/js/787.13a188cf.chunk.js",
-    "index.html": "/.github.io/AlterEgo/index.html",
-    "static/media/getFetch.cjs": "/.github.io/AlterEgo/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.e6c13ad2.css.map": "/.github.io/AlterEgo/static/css/main.e6c13ad2.css.map",
-    "main.4dcbebae.js.map": "/.github.io/AlterEgo/static/js/main.4dcbebae.js.map",
-    "787.13a188cf.chunk.js.map": "/.github.io/AlterEgo/static/js/787.13a188cf.chunk.js.map"
+    "main.css": "/AlterEgo/static/css/main.e6c13ad2.css",
+    "main.js": "/AlterEgo/static/js/main.f3583f2a.js",
+    "static/js/787.13a188cf.chunk.js": "/AlterEgo/static/js/787.13a188cf.chunk.js",
+    "index.html": "/AlterEgo/index.html",
+    "static/media/getFetch.cjs": "/AlterEgo/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "main.e6c13ad2.css.map": "/AlterEgo/static/css/main.e6c13ad2.css.map",
+    "main.f3583f2a.js.map": "/AlterEgo/static/js/main.f3583f2a.js.map",
+    "787.13a188cf.chunk.js.map": "/AlterEgo/static/js/787.13a188cf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.4dcbebae.js"
+    "static/js/main.f3583f2a.js"
   ]
 }
