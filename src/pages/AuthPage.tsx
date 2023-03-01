@@ -15,7 +15,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import FormInput from "../components/FormInput";
 import styled from "@emotion/styled";
 import { useAppDispatch } from "../hooks";
-import { authStatus } from "../redux/reducer/ActionCreators";
+import { authStatus } from "../redux/ActionCreators";
 
 export const LinkItem = styled(Link)`
   text-decoration: none;

@@ -1,9 +1,9 @@
 import React from "react";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import AppRouter from "./components/AppRouter";
 import { useEffect } from "react";
-import { authStatus } from "./redux/reducer/ActionCreators";
+import { authStatus } from "./redux/ActionCreators";
 import { useAppDispatch } from "./hooks";
 
 function App() {
@@ -14,10 +14,10 @@ function App() {
   }, []);
 
   return (
-    <HashRouter>
+    <BrowserRouter>
       <NavBar />
       <AppRouter />
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

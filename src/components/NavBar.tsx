@@ -6,7 +6,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../hooks";
-import { authStatus } from "../redux/reducer/ActionCreators";
+import { authStatus } from "../redux/ActionCreators";
 import LangLocalizations from "./LangLocalizations";
 import { useTranslation } from "react-i18next";
 

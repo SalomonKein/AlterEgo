@@ -1,15 +1,12 @@
-import { AppDispatch } from "../store";
-import axios from "axios";
-import { newsSlice } from "./NewsSlice";
-import { INews } from "../../models/INews";
+import { AppDispatch } from "./store";
+import { newsSlice } from "./reducer/NewsSlice";
+import { getData } from "../API";
 
 export const fetchNews = (page: number) => async (dispatch: AppDispatch) => {
   try {
     dispatch(newsSlice.actions.newsFetching());
     dispatch(newsSlice.actions.newsIsFetch());
-    const response = await axios.get<INews[]>(
-      `https://jsonplaceholder.typicode.com/posts?_page=${page}&_limit=10`
-    );
+    const response = await getData(page)
     dispatch(
       newsSlice.actions.addTotalCount(response.headers["x-total-count"])
     );

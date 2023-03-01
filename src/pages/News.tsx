@@ -3,7 +3,7 @@ import Container from "@mui/material/Container";
 import React, { useEffect, useState } from "react";
 import NewsItem from "../components/NewsItem";
 import { useAppDispatch, useAppSelector } from "../hooks";
-import { deleteNews, fetchNews } from "../redux/reducer/ActionCreators";
+import { deleteNews, fetchNews } from "../redux/ActionCreators";
 
 export default function News() {
   const { news, totalCount, error, isFetch } = useAppSelector(
